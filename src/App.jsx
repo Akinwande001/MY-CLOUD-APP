@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './index.css' 
+import CopyRight from "./CopyRight"
 import axios from "axios"
 
 function App() {
@@ -44,18 +45,19 @@ function App() {
      {data.name? <div className='button'>
         <div className='feels'>
         {data.main?<p className='bold'>{data.main.feels_like.toFixed()}°C</p> : null}
-          <p>Perfect time</p>
+          <p className='para'>Perfect time</p>
         </div>
         <div className='humidity'>
         {data.main?<p className='bold'>{data.main.humidity}%</p>: null}
-          <p>Humidity</p>
+          <p className='para'>Humidity</p>
         </div>
         <div className='wind'>
         {data.wind?<p className='bold'>{data.wind.speed} Mph</p>:null}
-          <p>Wind Speed</p>
+          <p className='para'>Wind Speed</p>
         </div>
       </div> : null}
     </div>
+    <CopyRight />
     </div>
   );
 }
