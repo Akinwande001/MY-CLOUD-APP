@@ -96,7 +96,7 @@ transform: rotate(270deg);
 /*==========MEDIA QUERY=======*/
 
  @media (max-width:480px) {
-  .app .button .{
+  .app .button {
     border-radius: 15px;
     justify-content: space-evenly;
   }
